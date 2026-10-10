@@ -1,0 +1,21 @@
+{
+  "name": "wildfirewatch",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "test": "node tests/test_browser_engine.cjs && node tests/test_fire_scenario.cjs"
+  },
+  "dependencies": {
+    "mapbox-gl": "^3.0.0",
+    "maplibre-gl": "^6.13.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.9",
+    "vite": "^6.0.0"
+  }
+}

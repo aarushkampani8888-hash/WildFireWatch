@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-08T15:10:11.940480+00:00",
+  "tests": {
+    "vision": {
+      "status": "failed",
+      "reason": "Provider HTTP 429; inspect account access, billing, and token permissions."
+    },
+    "mapbox": {
+      "status": "blocked",
+      "reason": "MAPBOX_ACCESS_TOKEN is not configured."
+    }
+  },
+  "limitations": [
+    "Connectivity/contract tests do not measure smoke accuracy or evacuation safety.",
+    "Mapbox requests use demonstration endpoints near Paradise, CA."
+  ]
+}

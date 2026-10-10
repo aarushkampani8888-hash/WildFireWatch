@@ -1,0 +1,10 @@
+file,scene,dataset_smoke_label,observed_model_score,above_threshold
+01-clear-road.jpg,Clear road / trees,False,0.0,False
+02-dense-wildfire-smoke.jpg,Dense smoke over vegetation,True,0.839,True
+03-distant-smoke.jpg,Distant plume beyond farmland,True,0.763,True
+04-urban-house-fire.jpg,Building fire with visible smoke,True,0.839,True
+05-night-fire.jpg,Nighttime fire / camera image,True,0.768,True
+06-subtle-smoke.jpg,Subtle distant smoke; potential miss,True,0.0,False
+07-hazy-camera.jpg,Hazy landscape; dataset marked no smoke,False,0.0,False
+08-storm-lookalike.jpg,Storm / rain lookalike; possible false alarm,False,0.356,True
+09-night-lights.jpg,Nighttime lights; dataset marked no smoke,False,0.252,True

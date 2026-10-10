@@ -1,0 +1,14 @@
+{
+  "path": [
+    "community",
+    "shelter"
+  ],
+  "minutes": 20.6,
+  "excluded": [],
+  "status": "candidate",
+  "source": "OSRM / OpenStreetMap / no live traffic",
+  "candidate_count": 1,
+  "traffic_available": false,
+  "distance_km": 15.86,
+  "geometry_points": 336
+}

@@ -1,0 +1,117 @@
+{
+  "architecture": "Frozen ImageNet MobileNetV3-small + trained normalized MLP head",
+  "seed": 42,
+  "dataset": "AI For Mankind / HPWREN challenge1 smoke vs no_smoke",
+  "source": "https://github.com/aiformankind/wildfire-smoke-dataset",
+  "license_note": "Publisher requests credit; dataset licensing scope must be confirmed before commercial redistribution. Related annotated datasets CC BY-NC-SA 4.0.",
+  "split": "event name/date grouped 60/20/20; cameras may recur across events",
+  "threshold": 0.64,
+  "epochs": 300,
+  "validation_loss": 0.6629204750061035,
+  "groups": {
+    "train": [
+      "20180704-Benton",
+      "20190712-RockHouse",
+      "20190801-Caliente",
+      "20170708-Whittier",
+      "20190714-MLOSouth",
+      "20171207-Lilac",
+      "20190715-MLOSouth3",
+      "20190813-Topanga",
+      "20180725-Cranston",
+      "20170625-BBM",
+      "20180611-fallbrook"
+    ],
+    "validation": [
+      "20190529-94Fire",
+      "20180614-Hope",
+      "20180706-West",
+      "20190803-OtaySouth"
+    ],
+    "test": [
+      "20190715-MLOSouth2",
+      "20190714-PinosSouth",
+      "20180614-Bridle"
+    ]
+  },
+  "metrics": {
+    "train": {
+      "n": 818,
+      "tp": 98,
+      "tn": 412,
+      "fp": 0,
+      "fn": 308,
+      "accuracy": 0.6234718826405868,
+      "precision": 1.0,
+      "recall": 0.2413793103448276,
+      "false_positive_rate": 0.0
+    },
+    "validation": {
+      "n": 288,
+      "tp": 42,
+      "tn": 128,
+      "fp": 3,
+      "fn": 115,
+      "accuracy": 0.5902777777777778,
+      "precision": 0.9333333333333333,
+      "recall": 0.267515923566879,
+      "false_positive_rate": 0.022900763358778626
+    },
+    "test": {
+      "n": 233,
+      "tp": 20,
+      "tn": 45,
+      "fp": 35,
+      "fn": 133,
+      "accuracy": 0.27896995708154504,
+      "precision": 0.36363636363636365,
+      "recall": 0.13071895424836602,
+      "false_positive_rate": 0.4375
+    }
+  },
+  "limitations": [
+    "Uncalibrated scores",
+    "No independent geographic/camera holdout",
+    "No operational fire-detection validation",
+    "Image classification only; no smoke localization",
+    "Test events were examined during development of earlier baselines; fresh independent evaluation required"
+  ],
+  "selected_epoch": 14,
+  "selection_reason": "Lower validation loss than fine-tuned candidate",
+  "readiness": "experimental; poor held-out smoke recall",
+  "dashboard_threshold_metrics": {
+    "train": {
+      "n": 818,
+      "tp": 14,
+      "tn": 412,
+      "fp": 0,
+      "fn": 392,
+      "accuracy": 0.5207823960880196,
+      "precision": 1.0,
+      "recall": 0.034482758620689655,
+      "false_positive_rate": 0.0
+    },
+    "validation": {
+      "n": 288,
+      "tp": 2,
+      "tn": 131,
+      "fp": 0,
+      "fn": 155,
+      "accuracy": 0.4618055555555556,
+      "precision": 1.0,
+      "recall": 0.012738853503184714,
+      "false_positive_rate": 0.0
+    },
+    "test": {
+      "n": 233,
+      "tp": 0,
+      "tn": 80,
+      "fp": 0,
+      "fn": 153,
+      "accuracy": 0.34334763948497854,
+      "precision": 0.0,
+      "recall": 0.0,
+      "false_positive_rate": 0.0
+    }
+  }
+}

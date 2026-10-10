@@ -1,0 +1,10 @@
+-r requirements.txt
+torch==2.14.1
+torchvision==0.29.1
+pillow==12.3.0
+gdown==6.4.1
+
+ultralytics==8.4.174
+datasets==5.1.0
+huggingface_hub==2.2.0
+pyarrow==25.0.1

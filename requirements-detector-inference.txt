@@ -1,0 +1,5 @@
+-r requirements.txt
+ultralytics==8.4.174
+torch==2.14.1
+torchvision==0.29.1
+pillow==12.3.0

@@ -1,0 +1,166 @@
+{
+  "architecture": "ImageNet MobileNetV3-small; final four blocks and normalized MLP head fine-tuned",
+  "seed": 42,
+  "dataset": "AI For Mankind / HPWREN challenge1 smoke vs no_smoke",
+  "source": "https://github.com/aiformankind/wildfire-smoke-dataset",
+  "license_note": "Publisher requests credit; dataset licensing scope must be confirmed before commercial redistribution. Related annotated datasets CC BY-NC-SA 4.0.",
+  "split": "event name/date grouped 60/20/20; cameras may recur across events",
+  "threshold": 0.76,
+  "epochs": 10,
+  "validation_loss": 0.7400872707366943,
+  "groups": {
+    "train": [
+      "20180704-Benton",
+      "20190712-RockHouse",
+      "20190801-Caliente",
+      "20170708-Whittier",
+      "20190714-MLOSouth",
+      "20171207-Lilac",
+      "20190715-MLOSouth3",
+      "20190813-Topanga",
+      "20180725-Cranston",
+      "20170625-BBM",
+      "20180611-fallbrook"
+    ],
+    "validation": [
+      "20190529-94Fire",
+      "20180614-Hope",
+      "20180706-West",
+      "20190803-OtaySouth"
+    ],
+    "test": [
+      "20190715-MLOSouth2",
+      "20190714-PinosSouth",
+      "20180614-Bridle"
+    ]
+  },
+  "metrics": {
+    "train": {
+      "n": 818,
+      "tp": 27,
+      "tn": 412,
+      "fp": 0,
+      "fn": 379,
+      "accuracy": 0.5366748166259169,
+      "precision": 1.0,
+      "recall": 0.0665024630541872,
+      "false_positive_rate": 0.0
+    },
+    "validation": {
+      "n": 288,
+      "tp": 29,
+      "tn": 122,
+      "fp": 9,
+      "fn": 128,
+      "accuracy": 0.5243055555555556,
+      "precision": 0.7631578947368421,
+      "recall": 0.18471337579617833,
+      "false_positive_rate": 0.06870229007633588
+    },
+    "test": {
+      "n": 233,
+      "tp": 1,
+      "tn": 80,
+      "fp": 0,
+      "fn": 152,
+      "accuracy": 0.34763948497854075,
+      "precision": 1.0,
+      "recall": 0.006535947712418301,
+      "false_positive_rate": 0.0
+    }
+  },
+  "limitations": [
+    "Uncalibrated scores",
+    "No independent geographic/camera holdout",
+    "No operational fire-detection validation",
+    "Image classification only; no smoke localization",
+    "Test events were examined during development of earlier baselines; fresh independent evaluation required"
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5940101116094146,
+      "validation_loss": 0.7400872707366943
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.40597946409928476,
+      "validation_loss": 0.9578072428703308
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.2835071227515531,
+      "validation_loss": 1.4325478076934814
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.177888564565071,
+      "validation_loss": 1.3701303005218506
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.21311879638937692,
+      "validation_loss": 1.4550952911376953
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.10729725547772456,
+      "validation_loss": 2.1881816387176514
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.12770812756274907,
+      "validation_loss": 2.4544754028320312
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.11631185603316664,
+      "validation_loss": 1.9382686614990234
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.13421065857847994,
+      "validation_loss": 2.2058510780334473
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.06789710577622894,
+      "validation_loss": 2.306473731994629
+    }
+  ],
+  "dashboard_threshold_metrics": {
+    "train": {
+      "n": 818,
+      "tp": 18,
+      "tn": 412,
+      "fp": 0,
+      "fn": 388,
+      "accuracy": 0.5256723716381418,
+      "precision": 1.0,
+      "recall": 0.04433497536945813,
+      "false_positive_rate": 0.0
+    },
+    "validation": {
+      "n": 288,
+      "tp": 11,
+      "tn": 131,
+      "fp": 0,
+      "fn": 146,
+      "accuracy": 0.4930555555555556,
+      "precision": 1.0,
+      "recall": 0.07006369426751592,
+      "false_positive_rate": 0.0
+    },
+    "test": {
+      "n": 233,
+      "tp": 0,
+      "tn": 80,
+      "fp": 0,
+      "fn": 153,
+      "accuracy": 0.34334763948497854,
+      "precision": 0.0,
+      "recall": 0.0,
+      "false_positive_rate": 0.0
+    }
+  }
+}

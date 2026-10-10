@@ -1,0 +1,22 @@
+[
+  {
+    "asset": "smoke.jpg",
+    "dataset": "D-Fire",
+    "split": "held-out test",
+    "sha256": "001bb080fe58edbcaf6c75be093b8237fe82627629e7d10772ba7583112929b1",
+    "license": "CC0-1.0 collection",
+    "capture_location": "unknown",
+    "capture_time": "unknown",
+    "demo_location_and_time": "staged, unrelated to original capture"
+  },
+  {
+    "asset": "cloud.jpg",
+    "dataset": "D-Fire",
+    "split": "held-out test",
+    "sha256": "000ca760fa1c2593f837a858fd1909cbbfe20b2132febc87fda2272fca11a501",
+    "license": "CC0-1.0 collection",
+    "capture_location": "unknown",
+    "capture_time": "unknown",
+    "demo_location_and_time": "staged, unrelated to original capture"
+  }
+]

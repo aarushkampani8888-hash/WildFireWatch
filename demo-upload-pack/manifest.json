@@ -1,0 +1,314 @@
+[
+  {
+    "file": "01-clear-road.jpg",
+    "scene": "Clear road / trees",
+    "dataset": "D-Fire",
+    "split": "held-out test",
+    "dataset_smoke_label": false,
+    "sha256": "d4c9c5075dc9183b2d76c53557c10eb9604ae1239bbc1836ec810c89414ca931",
+    "capture_location": "unknown",
+    "capture_time": "unknown",
+    "finding": {
+      "smoke_detected": false,
+      "confidence": 0.0,
+      "reason": "Local smoke detector found 0 candidate regions; uncalibrated score 0.000, human review required.",
+      "source": "local YOLO11n / Pyro-SDIS + D-Fire / experimental",
+      "model_threshold": 0.25,
+      "boxes": []
+    }
+  },
+  {
+    "file": "02-dense-wildfire-smoke.jpg",
+    "scene": "Dense smoke over vegetation",
+    "dataset": "D-Fire",
+    "split": "held-out test",
+    "dataset_smoke_label": true,
+    "sha256": "d911b94dc0e2ab77765b84ef0049bc9a760822e6d42ffcb98364ece97787ea1f",
+    "capture_location": "unknown",
+    "capture_time": "unknown",
+    "finding": {
+      "smoke_detected": true,
+      "confidence": 0.838931,
+      "reason": "Local smoke detector found 1 candidate regions; uncalibrated score 0.839, human review required.",
+      "source": "local YOLO11n / Pyro-SDIS + D-Fire / experimental",
+      "model_threshold": 0.25,
+      "boxes": [
+        {
+          "xyxy_normalized": [
+            0.006587,
+            0.0222,
+            0.85788,
+            0.97664
+          ],
+          "score": 0.838931
+        }
+      ]
+    }
+  },
+  {
+    "file": "03-distant-smoke.jpg",
+    "scene": "Distant plume beyond farmland",
+    "dataset": "D-Fire",
+    "split": "held-out test",
+    "dataset_smoke_label": true,
+    "sha256": "0a6e60197e4d4a9a8cf4ea67434b24129060299baa9adbbf9f8d97c5ce4da5f8",
+    "capture_location": "unknown",
+    "capture_time": "unknown",
+    "finding": {
+      "smoke_detected": true,
+      "confidence": 0.763479,
+      "reason": "Local smoke detector found 3 candidate regions; uncalibrated score 0.763, human review required.",
+      "source": "local YOLO11n / Pyro-SDIS + D-Fire / experimental",
+      "model_threshold": 0.25,
+      "boxes": [
+        {
+          "xyxy_normalized": [
+            0.128974,
+            0.508149,
+            0.154702,
+            0.572177
+          ],
+          "score": 0.763479
+        },
+        {
+          "xyxy_normalized": [
+            0.317829,
+            0.606776,
+            0.345758,
+            0.675791
+          ],
+          "score": 0.637577
+        },
+        {
+          "xyxy_normalized": [
+            0.576963,
+            0.263545,
+            0.605599,
+            0.323061
+          ],
+          "score": 0.631645
+        },
+        {
+          "xyxy_normalized": [
+            0.089357,
+            0.708047,
+            0.106897,
+            0.748916
+          ],
+          "score": 0.125042
+        },
+        {
+          "xyxy_normalized": [
+            0.56522,
+            0.261126,
+            0.606298,
+            0.325706
+          ],
+          "score": 0.082992
+        },
+        {
+          "xyxy_normalized": [
+            0.089278,
+            0.708716,
+            0.11181,
+            0.75553
+          ],
+          "score": 0.082733
+        }
+      ]
+    }
+  },
+  {
+    "file": "04-urban-house-fire.jpg",
+    "scene": "Building fire with visible smoke",
+    "dataset": "D-Fire",
+    "split": "held-out test",
+    "dataset_smoke_label": true,
+    "sha256": "2d295c870422415745344415c28ed1b916fca9adea86f0dc3ddeede1f6d4d3c2",
+    "capture_location": "unknown",
+    "capture_time": "unknown",
+    "finding": {
+      "smoke_detected": true,
+      "confidence": 0.838635,
+      "reason": "Local smoke detector found 1 candidate regions; uncalibrated score 0.839, human review required.",
+      "source": "local YOLO11n / Pyro-SDIS + D-Fire / experimental",
+      "model_threshold": 0.25,
+      "boxes": [
+        {
+          "xyxy_normalized": [
+            0.058375,
+            0.002187,
+            0.946658,
+            0.562733
+          ],
+          "score": 0.838635
+        }
+      ]
+    }
+  },
+  {
+    "file": "05-night-fire.jpg",
+    "scene": "Nighttime fire / camera image",
+    "dataset": "D-Fire",
+    "split": "held-out test",
+    "dataset_smoke_label": true,
+    "sha256": "81fb19049d017fb68680c76e319f6e765d6591e6702ca2cf1894c0001d3d78dc",
+    "capture_location": "unknown",
+    "capture_time": "unknown",
+    "finding": {
+      "smoke_detected": true,
+      "confidence": 0.767836,
+      "reason": "Local smoke detector found 2 candidate regions; uncalibrated score 0.768, human review required.",
+      "source": "local YOLO11n / Pyro-SDIS + D-Fire / experimental",
+      "model_threshold": 0.25,
+      "boxes": [
+        {
+          "xyxy_normalized": [
+            0.092706,
+            0.035015,
+            0.47617,
+            0.607581
+          ],
+          "score": 0.767836
+        },
+        {
+          "xyxy_normalized": [
+            0.50928,
+            0.347208,
+            0.65347,
+            0.515216
+          ],
+          "score": 0.33645
+        },
+        {
+          "xyxy_normalized": [
+            0.483557,
+            0.291659,
+            0.653965,
+            0.514118
+          ],
+          "score": 0.135767
+        },
+        {
+          "xyxy_normalized": [
+            0.510381,
+            0.363776,
+            0.62077,
+            0.514472
+          ],
+          "score": 0.105967
+        },
+        {
+          "xyxy_normalized": [
+            0.104883,
+            0.117586,
+            0.422793,
+            0.622952
+          ],
+          "score": 0.103216
+        },
+        {
+          "xyxy_normalized": [
+            0.501526,
+            0.343346,
+            0.591721,
+            0.515171
+          ],
+          "score": 0.05954
+        }
+      ]
+    }
+  },
+  {
+    "file": "06-subtle-smoke.jpg",
+    "scene": "Subtle distant smoke; potential miss",
+    "dataset": "D-Fire",
+    "split": "held-out test",
+    "dataset_smoke_label": true,
+    "sha256": "932834db2d67475f61e1d0e710a7adbefeca4dcb9a6874617ac66f2077022f13",
+    "capture_location": "unknown",
+    "capture_time": "unknown",
+    "finding": {
+      "smoke_detected": false,
+      "confidence": 0.0,
+      "reason": "Local smoke detector found 0 candidate regions; uncalibrated score 0.000, human review required.",
+      "source": "local YOLO11n / Pyro-SDIS + D-Fire / experimental",
+      "model_threshold": 0.25,
+      "boxes": []
+    }
+  },
+  {
+    "file": "07-hazy-camera.jpg",
+    "scene": "Hazy landscape; dataset marked no smoke",
+    "dataset": "D-Fire",
+    "split": "held-out test",
+    "dataset_smoke_label": false,
+    "sha256": "0b85e1cdb4415347a890dd7336e8a655033d077299645cc7bd0d34714a70bb5a",
+    "capture_location": "unknown",
+    "capture_time": "unknown",
+    "finding": {
+      "smoke_detected": false,
+      "confidence": 0.0,
+      "reason": "Local smoke detector found 0 candidate regions; uncalibrated score 0.000, human review required.",
+      "source": "local YOLO11n / Pyro-SDIS + D-Fire / experimental",
+      "model_threshold": 0.25,
+      "boxes": []
+    }
+  },
+  {
+    "file": "08-storm-lookalike.jpg",
+    "scene": "Storm / rain lookalike; possible false alarm",
+    "dataset": "D-Fire",
+    "split": "held-out test",
+    "dataset_smoke_label": false,
+    "sha256": "2494b375feb1a2902615305fbfcc12078a4ea052c9004ee77608c2a9d8496132",
+    "capture_location": "unknown",
+    "capture_time": "unknown",
+    "finding": {
+      "smoke_detected": true,
+      "confidence": 0.356227,
+      "reason": "Local smoke detector found 1 candidate regions; uncalibrated score 0.356, human review required.",
+      "source": "local YOLO11n / Pyro-SDIS + D-Fire / experimental",
+      "model_threshold": 0.25,
+      "boxes": [
+        {
+          "xyxy_normalized": [
+            0.01146,
+            0.016873,
+            1.0,
+            0.74365
+          ],
+          "score": 0.356227
+        }
+      ]
+    }
+  },
+  {
+    "file": "09-night-lights.jpg",
+    "scene": "Nighttime lights; dataset marked no smoke",
+    "dataset": "D-Fire",
+    "split": "held-out test",
+    "dataset_smoke_label": false,
+    "sha256": "17d718aa70bf96dedf5925650c302bae0a8c72956a573c6bcace035b415b6305",
+    "capture_location": "unknown",
+    "capture_time": "unknown",
+    "finding": {
+      "smoke_detected": true,
+      "confidence": 0.252269,
+      "reason": "Local smoke detector found 1 candidate regions; uncalibrated score 0.252, human review required.",
+      "source": "local YOLO11n / Pyro-SDIS + D-Fire / experimental",
+      "model_threshold": 0.25,
+      "boxes": [
+        {
+          "xyxy_normalized": [
+            0.007468,
+            0.0,
+            0.9978,
+            0.441501
+          ],
+          "score": 0.252269
+        }
+      ]
+    }
+  }
+]

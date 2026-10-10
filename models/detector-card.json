@@ -1,0 +1,97 @@
+{
+  "completed_epochs": 15,
+  "checkpoint_sha256": "c36550a02832ab9fbe15abbe64b2d9107dd7dbeb3771a86b9d3c27553eb0f18c",
+  "architecture": "YOLO11n, COCO pretrained, smoke-only head; first 10 layers frozen",
+  "device": "mps",
+  "requested_epochs": 15,
+  "image_size": 512,
+  "batch_size": 16,
+  "evaluation_only": true,
+  "run_elapsed_seconds": 81,
+  "test_detection_metrics": {
+    "metrics/precision(B)": 0.728709782352322,
+    "metrics/recall(B)": 0.6076283209081857,
+    "metrics/mAP50(B)": 0.6671799544451842,
+    "metrics/mAP50-95(B)": 0.3801690184684157,
+    "fitness": 0.3801690184684157
+  },
+  "preparation": {
+    "sources": {
+      "pyro": "https://huggingface.co/datasets/pyronear/pyro-sdis/tree/v2.0",
+      "dfire": "https://www.kaggle.com/datasets/sayedgamal99/smoke-fire-detection-yolo"
+    },
+    "counts": {
+      "pyro_original": 12378,
+      "dfire_original": 21527,
+      "dfire_invalid_annotation_images_excluded": 26,
+      "exact_duplicates_removed": 159,
+      "conflicting_label_families_removed": 3,
+      "dfire_test": 4294,
+      "pyro-sdis-v2_test": 946,
+      "dfire_val": 3098,
+      "pyro-sdis-v2_val": 314,
+      "dfire_train": 14109,
+      "pyro-sdis-v2_train": 10956,
+      "train_smoke": 16362,
+      "train_clear": 8703,
+      "val_smoke": 1829,
+      "val_clear": 1583,
+      "test_smoke": 2890,
+      "test_clear": 2350
+    },
+    "split_method": "Pyro camera-group SHA256 split 80/10/10; D-Fire publisher mirror train/val/test; exact duplicates removed globally with test priority",
+    "limitations": [
+      "D-Fire lacks camera/event metadata; near-duplicate leakage not fully audited",
+      "Pyro camera counts may produce imbalanced split sizes",
+      "Resized preserving aspect ratio, max 1280 pixels"
+    ],
+    "archive_sha256": {
+      "dfire_kaggle": "65d81b602991261b47ddc71281e99108362a30336a448e1f8d21352c825c6d83"
+    },
+    "pyro_revision_commit": "ebfc02d0cba7f7dfe0623d13bcf0f0aa8a38e3ee"
+  },
+  "image_presence_at_confidence_025": {
+    "pyro-sdis-v2": {
+      "tp": 436,
+      "tn": 107,
+      "fp": 18,
+      "fn": 385,
+      "recall": 0.5310596833130329,
+      "precision": 0.960352422907489,
+      "false_positive_rate": 0.144
+    },
+    "dfire": {
+      "tp": 1783,
+      "tn": 2128,
+      "fp": 97,
+      "fn": 286,
+      "recall": 0.8617689705171581,
+      "precision": 0.948404255319149,
+      "false_positive_rate": 0.04359550561797753
+    },
+    "combined": {
+      "tp": 2219,
+      "tn": 2235,
+      "fp": 115,
+      "fn": 671,
+      "recall": 0.7678200692041522,
+      "precision": 0.9507283633247644,
+      "false_positive_rate": 0.04893617021276596
+    }
+  },
+  "checkpoint_source": "/Users/aarushkampani/Desktop/HTHS/wildfirewatch/data/detector-runs/combined-smoke/weights/best.pt",
+  "readiness": "experimental; detection metrics require field validation",
+  "limitations": [
+    "Box-level detection metrics are not directly comparable to prior image-classifier recall",
+    "D-Fire camera/event provenance unavailable; near-duplicate leakage may inflate results",
+    "No operational evacuation or wildfire response validation"
+  ],
+  "licenses": {
+    "Pyro-SDIS": "Apache-2.0",
+    "D-Fire collection": "CC0-1.0",
+    "Ultralytics": "AGPL-3.0; review obligations before distribution/deployment"
+  },
+  "training_seconds": 7809.15,
+  "runtime_checkpoint": "models/smoke-detector.pt",
+  "promotion": "Local experimental default; human review required"
+}
