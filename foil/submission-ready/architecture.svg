@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820" role="img" aria-labelledby="title desc">
+  <title id="title">WildfireWatch evidence workflow</title>
+  <desc id="desc">Community and camera observations are screened by a local smoke model, combined with independent public data and geographic context, then reviewed and documented by a person.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5faf6"/><stop offset="1" stop-color="#eaf2ed"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#173b31" flood-opacity=".12"/></filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M1 1 10 6 1 11" fill="none" stroke="#27836a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <style>
+      .title{font:700 42px system-ui,-apple-system,Segoe UI,sans-serif;fill:#15372f}.sub{font:400 20px system-ui,-apple-system,Segoe UI,sans-serif;fill:#526b62}.head{font:700 21px system-ui,-apple-system,Segoe UI,sans-serif;fill:#173b31}.body{font:400 16px system-ui,-apple-system,Segoe UI,sans-serif;fill:#526b62}.tag{font:700 13px system-ui,-apple-system,Segoe UI,sans-serif;letter-spacing:1.5px;fill:#27836a}.note{font:500 15px system-ui,-apple-system,Segoe UI,sans-serif;fill:#6f5432}
+    </style>
+  </defs>
+  <rect width="1440" height="820" rx="32" fill="url(#bg)"/>
+  <text x="72" y="86" class="title">WildfireWatch</text>
+  <text x="74" y="122" class="sub">Evidence before escalation · a human-reviewed climate resilience workflow</text>
+  <g fill="none" stroke="#27836a" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M330 286H402"/><path d="M668 286H740"/><path d="M1006 286H1078"/>
+    <path d="M528 478V554H868V478" stroke-dasharray="8 8" marker-end="url(#arrow)"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="64" y="190" width="266" height="192" rx="20" fill="#fff" stroke="#cfddd4"/>
+    <rect x="402" y="190" width="266" height="192" rx="20" fill="#fff" stroke="#cfddd4"/>
+    <rect x="740" y="190" width="266" height="192" rx="20" fill="#fff" stroke="#cfddd4"/>
+    <rect x="1078" y="190" width="298" height="192" rx="20" fill="#fff" stroke="#cfddd4"/>
+    <rect x="402" y="478" width="604" height="154" rx="20" fill="#f3f8f4" stroke="#b9d5c8"/>
+  </g>
+  <text x="90" y="226" class="tag">01 · OBSERVE</text><text x="90" y="264" class="head">Reports &amp; cameras</text>
+  <text x="90" y="300" class="body"><tspan x="90" dy="0">Photo or video, observer notes,</tspan><tspan x="90" dy="25">time, and location context.</tspan></text>
+  <text x="428" y="226" class="tag">02 · SCREEN</text><text x="428" y="264" class="head">Local smoke model</text>
+  <text x="428" y="300" class="body"><tspan x="428" dy="0">YOLO screens images and sampled</tspan><tspan x="428" dy="25">frames; a person checks results.</tspan></text>
+  <text x="766" y="226" class="tag">03 · CORROBORATE</text><text x="766" y="264" class="head">Independent context</text>
+  <text x="766" y="300" class="body"><tspan x="766" dy="0">NASA thermal data, public alerts,</tspan><tspan x="766" dy="25">weather, and mapped terrain.</tspan></text>
+  <text x="1104" y="226" class="tag">04 · DECIDE</text><text x="1104" y="264" class="head">Human review &amp; handoff</text>
+  <text x="1104" y="300" class="body"><tspan x="1104" dy="0">Record a decision, uncertainty,</tspan><tspan x="1104" dy="25">and the next useful check.</tspan></text>
+  <text x="434" y="516" class="tag">DEMO LAYER</text><text x="434" y="553" class="head">Terrain-based spread scenario</text>
+  <text x="434" y="585" class="body"><tspan x="434" dy="0">Illustrative sensitivity visualization; not a validated forecast,</tspan><tspan x="434" dy="24">evacuation boundary, or responder instruction.</tspan></text>
+  <rect x="64" y="692" width="1312" height="68" rx="16" fill="#fff3df" stroke="#ecd4ab"/>
+  <text x="92" y="733" class="note">Thermal anomalies are leads, model scores are uncalibrated, and missing data does not mean no fire. No emergency notifications are sent.</text>
+</svg>
